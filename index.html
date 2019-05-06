@@ -27,6 +27,7 @@ a:hover{
 $(document).ready(function() {
     setInterval(function(){
            $("#current-track").load("http://185.224.135.202:8000/status.xsl");
+	   document.title = $("#current-track").text();
     }, 3 * 1000);
 });
 </script>
