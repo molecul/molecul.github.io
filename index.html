@@ -21,4 +21,14 @@ a:hover{
 <p>
 <b><h1>RADIO STATION</h1></b><br />
 <body style="margin: 0px;"><audio controls="" autoplay="" name="media"><source src="http://185.224.135.202:8000/witchhouse" type="audio/mpeg"></audio></body><br />
+	
+<script>
+$(document).ready(function() {
+    setInterval(function(){
+           $("#current-track").load("http://79.120.77.11:8000/status.xsl?mount=/witchhouse");
+    }, 10 * 1000);
+});
+</script>
+<div id="current-track">
+</div>	
 </body>
